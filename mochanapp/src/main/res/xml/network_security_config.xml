@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Allow cleartext for your specific server IP -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">10.13.0.113</domain>
+    </domain-config>
+
+    <!-- Or allow all local development (NOT for production) -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
